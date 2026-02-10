@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'CC Red Alert';
-  src: url('/cc_red_alert_inet.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 @theme {
   --color-charcoal: #0A0505;
   --color-ember: #120808;

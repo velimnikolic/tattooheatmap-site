@@ -1,4 +1,5 @@
 import { COMPANY_NAME, CONTACT_EMAIL, APP_NAME } from '@/lib/constants';
+import basePath from '@/lib/basePath';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen ember-gradient">
       <div className="max-w-3xl mx-auto px-6 py-20">
-        <a href="/" className="inline-block text-sm text-flame hover:text-flame/80 tracking-wider mb-8">
+        <a href={`${basePath}/`} className="inline-block text-sm text-flame hover:text-flame/80 tracking-wider mb-8">
           &larr; BACK TO HOME
         </a>
 

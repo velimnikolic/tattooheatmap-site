@@ -1,4 +1,5 @@
 import { COMPANY_NAME, CURRENT_YEAR, CONTACT_EMAIL } from '@/lib/constants';
+import basePath from '@/lib/basePath';
 
 export default function Footer() {
   return (
@@ -29,8 +30,8 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold tracking-[0.2em] text-flame mb-4 uppercase">Legal</h4>
             <ul className="space-y-3">
-              <li><a href="/terms/" className="text-muted hover:text-soft-white transition-colors">Terms of Service</a></li>
-              <li><a href="/privacy/" className="text-muted hover:text-soft-white transition-colors">Privacy Policy</a></li>
+              <li><a href={`${basePath}/terms/`} className="text-muted hover:text-soft-white transition-colors">Terms of Service</a></li>
+              <li><a href={`${basePath}/privacy/`} className="text-muted hover:text-soft-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
         </div>

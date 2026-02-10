@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import SectionWrapper from './SectionWrapper';
 import { pricing } from '@/lib/constants';
+import basePath from '@/lib/basePath';
 
 function CheckIcon() {
   return (
@@ -94,9 +95,9 @@ export default function Pricing() {
         <p className="text-center text-muted text-sm mt-8">
           Subscription billed through your platform&apos;s app store.
           <br />
-          <a href="/terms/" className="text-flame/70 hover:text-flame transition-colors">Terms of Service</a>
+          <a href={`${basePath}/terms/`} className="text-flame/70 hover:text-flame transition-colors">Terms of Service</a>
           {' '}&middot;{' '}
-          <a href="/privacy/" className="text-flame/70 hover:text-flame transition-colors">Privacy Policy</a>
+          <a href={`${basePath}/privacy/`} className="text-flame/70 hover:text-flame transition-colors">Privacy Policy</a>
         </p>
       </div>
     </SectionWrapper>

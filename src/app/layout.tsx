@@ -1,5 +1,12 @@
 import type { Metadata } from 'next';
+import localFont from 'next/font/local';
 import './globals.css';
+
+const ccRedAlert = localFont({
+  src: '../../public/cc_red_alert_inet.ttf',
+  display: 'swap',
+  variable: '--font-cc-red-alert',
+});
 
 export const metadata: Metadata = {
   title: 'HEAT — Tattoo Shade Analyzer',
@@ -19,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={ccRedAlert.className}>
       <body className="antialiased">{children}</body>
     </html>
   );
