@@ -23,7 +23,7 @@ export default function Pricing() {
           </span>
         </h2>
         <p className="text-center text-muted text-lg mb-16 max-w-xl mx-auto">
-          Start with a free trial. Unlock the full power of HEAT with a subscription.
+          Unlock the full power of HEAT with a subscription.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -92,7 +92,7 @@ export default function Pricing() {
         </div>
 
         <p className="text-center text-muted text-sm mt-8">
-          Free trial available. Subscription billed through your platform&apos;s app store.
+          Subscription billed through your platform&apos;s app store.
           <br />
           <a href="/terms/" className="text-flame/70 hover:text-flame transition-colors">Terms of Service</a>
           {' '}&middot;{' '}

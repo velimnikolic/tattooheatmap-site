@@ -1,12 +1,5 @@
 import type { Metadata } from 'next';
-import { Rajdhani } from 'next/font/google';
 import './globals.css';
-
-const rajdhani = Rajdhani({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'HEAT — Tattoo Shade Analyzer',
@@ -26,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={rajdhani.className}>
+    <html lang="en">
       <body className="antialiased">{children}</body>
     </html>
   );

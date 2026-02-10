@@ -71,7 +71,7 @@ export default function Platforms() {
           </span>
         </h2>
         <p className="text-center text-muted text-lg mb-16 max-w-xl mx-auto">
-          Free trial available. Subscribe to unlock all features.
+          Subscribe to unlock all features.
         </p>
 
         {/* Desktop */}

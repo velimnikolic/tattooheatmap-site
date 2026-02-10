@@ -1,13 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import FireParticles from './FireParticles';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden ember-gradient">
-      <FireParticles />
-
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <motion.h1

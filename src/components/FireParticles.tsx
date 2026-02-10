@@ -17,7 +17,7 @@ export default function FireParticles() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
   const animFrameRef = useRef<number>(0);
-  const visibleRef = useRef(true);
+  const visibleRef = useRef(true); // kept for potential future use
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -100,24 +100,16 @@ export default function FireParticles() {
 
     animate();
 
-    // Pause when off-screen
-    const observer = new IntersectionObserver(
-      ([entry]) => { visibleRef.current = entry.isIntersecting; },
-      { threshold: 0.1 }
-    );
-    observer.observe(canvas);
-
     return () => {
       cancelAnimationFrame(animFrameRef.current);
       window.removeEventListener('resize', resize);
-      observer.disconnect();
     };
   }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-none"
+      className="fixed inset-0 w-full h-full pointer-events-none z-0"
       aria-hidden="true"
     />
   );

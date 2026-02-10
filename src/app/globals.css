@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'CC Red Alert';
+  src: url('/cc_red_alert_inet.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-charcoal: #0A0505;
   --color-ember: #120808;
@@ -10,8 +18,8 @@
   --color-muted: #8A7A6A;
   --color-soft-white: #F5F0EB;
 
-  --font-heading: 'Rajdhani', sans-serif;
-  --font-body: 'Rajdhani', sans-serif;
+  --font-heading: 'CC Red Alert', monospace;
+  --font-body: 'CC Red Alert', monospace;
 }
 
 html {
@@ -64,10 +72,10 @@ body {
 .ember-gradient {
   background: linear-gradient(
     180deg,
-    var(--color-charcoal) 0%,
-    var(--color-warm-dark) 30%,
-    var(--color-ember) 60%,
-    var(--color-charcoal) 100%
+    rgba(10, 5, 5, 0.85) 0%,
+    rgba(26, 10, 5, 0.7) 30%,
+    rgba(18, 8, 8, 0.7) 60%,
+    rgba(10, 5, 5, 0.85) 100%
   );
 }
 

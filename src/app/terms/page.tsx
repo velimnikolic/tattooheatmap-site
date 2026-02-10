@@ -42,7 +42,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-bold text-soft-white tracking-wider mb-3">3. Subscription & Billing</h2>
             <p>
-              {APP_NAME} offers a free trial with limited functionality. Full access requires an active subscription,
+              {APP_NAME} requires an active subscription for full access,
               available on monthly or annual billing cycles. Subscriptions are billed through the respective platform&apos;s
               app store (Apple App Store, Google Play Store) or directly for desktop platforms.
             </p>
