@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="snap-page relative overflow-hidden ember-gradient">
+    <section id="hero" className="snap-page relative overflow-hidden ember-gradient">
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <motion.h1
@@ -49,10 +49,10 @@ export default function Hero() {
             href="#download"
             className="flame-gradient px-8 py-4 text-lg font-semibold tracking-wider text-white rounded-lg hover:opacity-90 transition-opacity"
           >
-            DOWNLOAD FREE
+            DOWNLOAD
           </a>
           <a
-            href="#features"
+            href="#shades"
             className="px-8 py-4 text-lg font-semibold tracking-wider text-flame border border-flame/40 rounded-lg hover:bg-flame/10 transition-colors"
           >
             LEARN MORE

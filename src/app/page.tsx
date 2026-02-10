@@ -7,12 +7,14 @@ import Pricing from '@/components/Pricing';
 import Platforms from '@/components/Platforms';
 import Footer from '@/components/Footer';
 import FireParticles from '@/components/FireParticles';
+import PageIndicator from '@/components/PageIndicator';
 
 export default function Home() {
   return (
     <>
       <FireParticles />
       <Navbar />
+      <PageIndicator />
       <main className="relative z-10 snap-container">
         <Hero />
         <ShadeAnalysis />
