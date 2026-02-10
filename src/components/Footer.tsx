@@ -23,7 +23,7 @@ export default function Footer() {
             <h4 className="text-sm font-bold tracking-[0.2em] text-flame mb-4 uppercase">Support</h4>
             <ul className="space-y-3">
               <li><a href={`mailto:${CONTACT_EMAIL}`} className="text-muted hover:text-soft-white transition-colors">Contact Us</a></li>
-              <li><a href="#" className="text-muted hover:text-soft-white transition-colors">FAQ</a></li>
+              <li><a href={`${basePath}/faq/`} className="text-muted hover:text-soft-white transition-colors">FAQ</a></li>
             </ul>
           </div>
 

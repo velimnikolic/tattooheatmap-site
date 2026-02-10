@@ -86,5 +86,5 @@ export const navLinks = [
 export const APP_NAME = 'HEAT';
 export const APP_TAGLINE = 'Tattoo Shade Analyzer';
 export const COMPANY_NAME = 'HEAT - Tattoo Heatmap Analyzer';
-export const CONTACT_EMAIL = 'support@tattooheatmap.com';
+export const CONTACT_EMAIL = 'velimnikolic@gmail.com';
 export const CURRENT_YEAR = 2026;
