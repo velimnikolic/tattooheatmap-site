@@ -1,2 +1,2 @@
-const basePath = process.env.NODE_ENV === 'production' ? '/tattooheatmap-site' : '';
+const basePath = '';
 export default basePath;
