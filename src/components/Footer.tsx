@@ -10,7 +10,8 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold tracking-[0.2em] text-flame mb-4 uppercase">Product</h4>
             <ul className="space-y-3">
-              <li><a href="#features" className="text-muted hover:text-soft-white transition-colors">Features</a></li>
+              <li><a href="#shades" className="text-muted hover:text-soft-white transition-colors">Shade Analysis</a></li>
+              <li><a href="#stencil" className="text-muted hover:text-soft-white transition-colors">Stencil</a></li>
               <li><a href="#how-it-works" className="text-muted hover:text-soft-white transition-colors">How It Works</a></li>
               <li><a href="#pricing" className="text-muted hover:text-soft-white transition-colors">Pricing</a></li>
               <li><a href="#download" className="text-muted hover:text-soft-white transition-colors">Download</a></li>

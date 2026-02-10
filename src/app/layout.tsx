@@ -11,8 +11,9 @@ const ccRedAlert = localFont({
 export const metadata: Metadata = {
   title: 'HEAT — Tattoo Shade Analyzer',
   description:
-    'Analyze shade intensities. Generate professional stencils. Tattoo with confidence. Available on Mac, Windows, Linux, Android & iOS.',
+    'Analyze shade intensities. Generate professional stencils. Tattoo with confidence. Available on Mac, Windows, Android & iOS.',
   keywords: ['tattoo', 'heatmap', 'shade analyzer', 'stencil generator', 'tattoo tool', 'thermal printer'],
+  icons: { icon: '/favicon.svg' },
   openGraph: {
     title: 'HEAT — Tattoo Shade Analyzer',
     description: 'Analyze shade intensities. Generate professional stencils. Tattoo with confidence.',

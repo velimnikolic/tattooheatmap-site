@@ -79,7 +79,7 @@ export default function Platforms() {
           <h3 className="text-sm font-bold tracking-[0.3em] text-muted mb-6 text-center uppercase">
             Desktop
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
             {platforms.desktop.map((p, i) => (
               <motion.a
                 key={p.name}

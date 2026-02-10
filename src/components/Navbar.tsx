@@ -9,7 +9,15 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    const onScroll = () => {
+      const container = document.querySelector('.snap-container');
+      setScrolled((container?.scrollTop ?? window.scrollY) > 50);
+    };
+    const container = document.querySelector('.snap-container');
+    if (container) {
+      container.addEventListener('scroll', onScroll, { passive: true });
+      return () => container.removeEventListener('scroll', onScroll);
+    }
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);

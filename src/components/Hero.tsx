@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden ember-gradient">
+    <section className="snap-page relative overflow-hidden ember-gradient">
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <motion.h1
@@ -66,7 +66,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1.5 }}
           className="flex justify-center gap-6 mt-12 text-muted"
         >
-          {['macOS', 'Windows', 'Linux', 'Android', 'iOS'].map((platform) => (
+          {['macOS', 'Windows', 'Android', 'iOS'].map((platform) => (
             <span key={platform} className="text-sm tracking-wider uppercase opacity-60">
               {platform}
             </span>

@@ -31,7 +31,7 @@ export const features = [
   {
     title: 'WORKS EVERYWHERE',
     description:
-      'Mac, Windows, Linux, Android, iOS — the same powerful analysis engine on every platform you use.',
+      'Mac, Windows, Android, iOS — the same powerful analysis engine on every platform you use.',
     icon: 'devices',
   },
 ] as const;
@@ -68,7 +68,6 @@ export const platforms = {
   desktop: [
     { name: 'macOS', ext: '.dmg', icon: 'apple', available: true },
     { name: 'Windows', ext: '.msi', icon: 'windows', available: true },
-    { name: 'Linux', ext: '.deb', icon: 'linux', available: true },
   ],
   mobile: [
     { name: 'Android', store: 'Google Play', icon: 'android', available: false },
@@ -77,7 +76,8 @@ export const platforms = {
 } as const;
 
 export const navLinks = [
-  { label: 'Features', href: '#features' },
+  { label: 'Shades', href: '#shades' },
+  { label: 'Stencil', href: '#stencil' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'Download', href: '#download' },

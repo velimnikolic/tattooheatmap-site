@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
+import ShadeAnalysis from '@/components/ShadeAnalysis';
+import StencilExplainer from '@/components/StencilExplainer';
 import HowItWorks from '@/components/HowItWorks';
 import Pricing from '@/components/Pricing';
 import Platforms from '@/components/Platforms';
@@ -12,14 +13,17 @@ export default function Home() {
     <>
       <FireParticles />
       <Navbar />
-      <main className="relative z-10">
+      <main className="relative z-10 snap-container">
         <Hero />
-        <Features />
+        <ShadeAnalysis />
+        <StencilExplainer />
         <HowItWorks />
         <Pricing />
-        <Platforms />
+        <div className="snap-page-end">
+          <Platforms />
+          <Footer />
+        </div>
       </main>
-      <Footer />
     </>
   );
 }
