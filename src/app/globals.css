@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #0A0505;
+  --color-ember: #120808;
+  --color-warm-dark: #1A0A05;
+  --color-flame: #FF6B35;
+  --color-ember-red: #FF4500;
+  --color-gold: #FFD700;
+  --color-muted: #8A7A6A;
+  --color-soft-white: #F5F0EB;
+
+  --font-heading: 'Rajdhani', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-charcoal);
+  color: var(--color-soft-white);
+  font-family: var(--font-body);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-ember);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-flame);
+}
+
+/* Flame glow text effect */
+.flame-glow {
+  text-shadow:
+    0 0 20px rgba(255, 107, 53, 0.5),
+    0 0 40px rgba(255, 69, 0, 0.3),
+    0 0 80px rgba(255, 69, 0, 0.15);
+}
+
+.flame-glow-sm {
+  text-shadow:
+    0 0 10px rgba(255, 107, 53, 0.4),
+    0 0 20px rgba(255, 69, 0, 0.2);
+}
+
+/* Flame gradient for backgrounds */
+.flame-gradient {
+  background: linear-gradient(135deg, var(--color-flame), var(--color-ember-red));
+}
+
+.ember-gradient {
+  background: linear-gradient(
+    180deg,
+    var(--color-charcoal) 0%,
+    var(--color-warm-dark) 30%,
+    var(--color-ember) 60%,
+    var(--color-charcoal) 100%
+  );
+}
+
+/* Card hover glow */
+.card-glow {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.15), 0 0 60px rgba(255, 69, 0, 0.05);
+  border-color: var(--color-flame);
+}
+
+/* Pricing highlight */
+.pricing-highlight {
+  box-shadow: 0 0 40px rgba(255, 107, 53, 0.2), 0 0 80px rgba(255, 69, 0, 0.1);
+}
+
+/* Dashed line animation for timeline */
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.dash-animate {
+  animation: dash-flow 1s linear infinite;
+}
