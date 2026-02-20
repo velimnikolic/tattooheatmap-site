@@ -64,7 +64,7 @@ const cardVariant = {
 export default function Platforms() {
   return (
     <SectionWrapper id="download" snap={false}>
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto pb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-center tracking-wider mb-4 flame-glow-sm">
           <span className="bg-gradient-to-r from-flame to-ember-red bg-clip-text text-transparent">
             DOWNLOAD

@@ -44,11 +44,11 @@ export default function PageIndicator() {
         <button
           key={section.id}
           onClick={() => handleClick(i)}
-          className="group flex items-center gap-2"
+          className="group relative flex items-center"
           aria-label={section.label}
         >
           {/* Label (shows on hover) */}
-          <span className="text-[10px] tracking-wider text-flame opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+          <span className="absolute right-full mr-2 text-[10px] tracking-wider text-flame opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
             {section.label.toUpperCase()}
           </span>
           {/* Dot */}
