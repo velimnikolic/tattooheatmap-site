@@ -71,7 +71,7 @@ export const platforms = {
   ],
   mobile: [
     { name: 'Android', store: 'Google Play', icon: 'android', available: false },
-    { name: 'iOS', store: 'App Store', icon: 'apple', available: false },
+    { name: 'iOS', store: 'App Store', icon: 'apple', available: true, url: 'https://apps.apple.com/us/app/heat-tattoo-shade-analyzer/id6759294460' },
   ],
 } as const;
 

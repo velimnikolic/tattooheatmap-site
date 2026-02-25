@@ -109,28 +109,51 @@ export default function Platforms() {
             Mobile
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
-            {platforms.mobile.map((p, i) => (
-              <motion.div
-                key={p.name}
-                custom={i + 3}
-                variants={cardVariant}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="relative flex items-center gap-4 bg-ember/40 border border-flame/5 rounded-lg px-6 py-4 opacity-60"
-              >
-                <PlatformIcon icon={p.icon} />
-                <div>
-                  <div className="font-bold tracking-wider text-soft-white/70">
-                    {p.name}
+            {platforms.mobile.map((p, i) =>
+              p.available && 'url' in p ? (
+                <motion.a
+                  key={p.name}
+                  href={p.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  custom={i + 3}
+                  variants={cardVariant}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true }}
+                  className="card-glow flex items-center gap-4 bg-ember/60 border border-flame/10 rounded-lg px-6 py-4 hover:border-flame/40 transition-all group"
+                >
+                  <PlatformIcon icon={p.icon} />
+                  <div>
+                    <div className="font-bold tracking-wider text-soft-white group-hover:text-flame transition-colors">
+                      {p.name}
+                    </div>
+                    <div className="text-xs text-muted">{p.store}</div>
                   </div>
-                  <div className="text-xs text-muted">{p.store}</div>
-                </div>
-                <span className="absolute -top-2 right-3 px-2 py-0.5 bg-warm-dark border border-flame/20 text-[10px] font-bold tracking-wider text-gold rounded-full">
-                  COMING SOON
-                </span>
-              </motion.div>
-            ))}
+                </motion.a>
+              ) : (
+                <motion.div
+                  key={p.name}
+                  custom={i + 3}
+                  variants={cardVariant}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true }}
+                  className="relative flex items-center gap-4 bg-ember/40 border border-flame/5 rounded-lg px-6 py-4 opacity-60"
+                >
+                  <PlatformIcon icon={p.icon} />
+                  <div>
+                    <div className="font-bold tracking-wider text-soft-white/70">
+                      {p.name}
+                    </div>
+                    <div className="text-xs text-muted">{p.store}</div>
+                  </div>
+                  <span className="absolute -top-2 right-3 px-2 py-0.5 bg-warm-dark border border-flame/20 text-[10px] font-bold tracking-wider text-gold rounded-full">
+                    COMING SOON
+                  </span>
+                </motion.div>
+              )
+            )}
           </div>
         </div>
       </div>
